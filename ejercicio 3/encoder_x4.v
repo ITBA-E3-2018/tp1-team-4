@@ -16,7 +16,7 @@ module encoder_x4(z, y, x);
     not(net1, x[2]);
     and(net2, net1, x[1]);
 
-    or(z[1], x[2], x[3]);
-    or(z[0], x[3], net2);
+    or(z[1], x[3], x[2]);
+    or(z[0], x[1], net2);
     or(y, x[0], x[1], x[2], x[3]);
 endmodule
