@@ -14,6 +14,7 @@ module ecoder_tb;
 
     initial begin
         #10 x = 4'b0001;
+        $display("Input: %b -- Output: %b", x, )
         #10 x = 4'b0010;
         #10 x = 4'b0100;
         #10 x = 4'b1000;
