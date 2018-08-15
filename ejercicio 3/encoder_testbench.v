@@ -5,7 +5,7 @@
 // Electronica III - Grupo 4                //
 // -----------------------------------------//
 
-`include "encoder_x4.v"
+`include "prior_encoder_4x2.v"
 
 module ecoder_tb;
     reg[3:0]    x;
