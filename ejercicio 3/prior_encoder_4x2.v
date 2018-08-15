@@ -1,8 +1,8 @@
-//--------------------------------------//
-// Encoder con prioridad de 4 inputs    //
-// Nombre del archivo: encoder_x4.v     //
-// Electronica III - Grupo 4            //
-// -------------------------------------//
+//----------------------------------------------//
+// Encoder con prioridad de 4 inputs/2 outputs  //
+// Nombre del archivo: prior_encoder_4x2.v      //
+// Electronica III - Grupo 4                    //
+// ---------------------------------------------//
 
 module encoder_x4(z, y, x);
     
