@@ -19,28 +19,33 @@ module ecoder_tb;
 
         // Casos "sin prioridad"
         #1 $display("Casos 'sin prioridad'");
-        #10 x = 4'b0001;
-        #1 $display("Input: %b -- Output: %b", x, z);
-        #10 x = 4'b0010;
-        #1 $display("Input: %b -- Output: %b", x, z);
-        #10 x = 4'b0100;
-        #1 $display("Input: %b -- Output: %b", x, z);
-        #10 x = 4'b1000;
-        #1 $display("Input: %b -- Output: %b", x, z);
+        #1 x = 4'b0001;
+        #1 $display("Input: %b -- Output: %b -- Control: %b", x, z, y);
+        #1 x = 4'b0010;
+        #1 $display("Input: %b -- Output: %b -- Control: %b", x, z, y);
+        #1 x = 4'b0100;
+        #1 $display("Input: %b -- Output: %b -- Control: %b", x, z, y);
+        #1 x = 4'b1000;
+        #1 $display("Input: %b -- Output: %b -- Control: %b", x, z, y);
 
         // Casos con prioridad
-        #1 $display("Casos 'con prioridad");
-        #10 x = 4'b0101;
-        #1 $display("Input: %b -- Output: %b", x, z);
-        #10 x = 4'b1010;
-        #1 $display("Input: %b -- Output: %b", x, z);
-        #10 x = 4'b1100;
-        #1 $display("Input: %b -- Output: %b", x, z);
-        #10 x = 4'b1010;
-        #1 $display("Input: %b -- Output: %b", x, z);
+        #1 $display("Casos 'con prioridad'");
+        #1 x = 4'b0101;
+        #1 $display("Input: %b -- Output: %b -- Control: %b", x, z, y);
+        #1 x = 4'b1010;
+        #1 $display("Input: %b -- Output: %b -- Control: %b", x, z, y);
+        #1 x = 4'b1100;
+        #1 $display("Input: %b -- Output: %b -- Control: %b", x, z, y);
+        #1 x = 4'b1010;
+        #1 $display("Input: %b -- Output: %b -- Control: %b", x, z, y);
+
+        //Caso todos ceros
+        #1 $display("Caso todos ceros");
+        #1 x = 4'b0000;
+        #1 $display("Input: %b -- Output: %b -- Control: %b", x, z, y);
 
 
 
-        #10 $stop;
+        #1 $stop;
     end
 endmodule
