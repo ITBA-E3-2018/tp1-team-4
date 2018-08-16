@@ -1,12 +1,12 @@
 //----------------------------------------------//
 // Sumador de dos numeros de 4 bits             //
-// Nombre del archivo: 4bit_adder               //
+// Nombre del archivo: x4bit_adder               //
 // Electronica III - Grupo 4                    //
 // ---------------------------------------------//
 
 `include "../complete_adder/complete_adder.v"
 
-module 4bit_adder(s, c_out, c_in, x, y);
+module x4bit_adder(s, c_out, c_in, x, y);
     input       c_in;
     input[3:0]  x, y;
     output[3:0] s;
