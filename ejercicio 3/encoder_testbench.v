@@ -43,9 +43,5 @@ module ecoder_tb;
         #1 $display("Caso todos ceros");
         #1 x = 4'b0000;
         #1 $display("Input: %b -- Output: %b -- Control: %b", x, z, y);
-
-
-
-        #1 $stop;
     end
 endmodule

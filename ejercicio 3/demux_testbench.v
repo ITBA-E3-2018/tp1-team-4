@@ -9,7 +9,7 @@
 
 module demux_tb;
     reg[1:0]    x;
-    reg[3:0]    z;
+    wire[3:0]   z;
     reg         d;
 
     demux_2x4 demux(z, d, x);
