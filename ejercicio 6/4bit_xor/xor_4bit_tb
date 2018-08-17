@@ -1,0 +1,146 @@
+#! /usr/bin/vvp
+:ivl_version "10.1 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x55c31c0a47a0 .scope module, "xor_4bit_tb" "xor_4bit_tb" 2 3;
+ .timescale 0 0;
+v0x55c31c0c57d0_0 .var "x", 3 0;
+v0x55c31c0c5890_0 .var "y", 3 0;
+v0x55c31c0c5960_0 .net "z", 3 0, L_0x55c31c0c62e0;  1 drivers
+S_0x55c31c0a4920 .scope module, "xor_x4" "xor_4bit" 2 7, 3 7 0, S_0x55c31c0a47a0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 4 "z"
+    .port_info 1 /INPUT 4 "x"
+    .port_info 2 /INPUT 4 "y"
+L_0x55c31c0c5a60 .functor XOR 1, L_0x55c31c0c5b60, L_0x55c31c0c5c50, C4<0>, C4<0>;
+L_0x55c31c0c5d90 .functor XOR 1, L_0x55c31c0c5e00, L_0x55c31c0c5ef0, C4<0>, C4<0>;
+L_0x55c31c0c6010 .functor XOR 1, L_0x55c31c0c6080, L_0x55c31c0c6170, C4<0>, C4<0>;
+L_0x55c31c0c6470 .functor XOR 1, L_0x55c31c0c6560, L_0x55c31c0c66a0, C4<0>, C4<0>;
+v0x55c31c09c9b0_0 .net *"_s1", 0 0, L_0x55c31c0c5a60;  1 drivers
+v0x55c31c0c4ae0_0 .net *"_s11", 0 0, L_0x55c31c0c5e00;  1 drivers
+v0x55c31c0c4bc0_0 .net *"_s13", 0 0, L_0x55c31c0c5ef0;  1 drivers
+v0x55c31c0c4c80_0 .net *"_s15", 0 0, L_0x55c31c0c6010;  1 drivers
+v0x55c31c0c4d60_0 .net *"_s18", 0 0, L_0x55c31c0c6080;  1 drivers
+v0x55c31c0c4e90_0 .net *"_s20", 0 0, L_0x55c31c0c6170;  1 drivers
+v0x55c31c0c4f70_0 .net *"_s22", 0 0, L_0x55c31c0c6470;  1 drivers
+v0x55c31c0c5050_0 .net *"_s26", 0 0, L_0x55c31c0c6560;  1 drivers
+v0x55c31c0c5130_0 .net *"_s28", 0 0, L_0x55c31c0c66a0;  1 drivers
+v0x55c31c0c5210_0 .net *"_s4", 0 0, L_0x55c31c0c5b60;  1 drivers
+v0x55c31c0c52f0_0 .net *"_s6", 0 0, L_0x55c31c0c5c50;  1 drivers
+v0x55c31c0c53d0_0 .net *"_s8", 0 0, L_0x55c31c0c5d90;  1 drivers
+v0x55c31c0c54b0_0 .net "x", 3 0, v0x55c31c0c57d0_0;  1 drivers
+v0x55c31c0c5590_0 .net "y", 3 0, v0x55c31c0c5890_0;  1 drivers
+v0x55c31c0c5670_0 .net "z", 3 0, L_0x55c31c0c62e0;  alias, 1 drivers
+L_0x55c31c0c5b60 .part v0x55c31c0c57d0_0, 0, 1;
+L_0x55c31c0c5c50 .part v0x55c31c0c5890_0, 0, 1;
+L_0x55c31c0c5e00 .part v0x55c31c0c57d0_0, 1, 1;
+L_0x55c31c0c5ef0 .part v0x55c31c0c5890_0, 1, 1;
+L_0x55c31c0c6080 .part v0x55c31c0c57d0_0, 2, 1;
+L_0x55c31c0c6170 .part v0x55c31c0c5890_0, 2, 1;
+L_0x55c31c0c62e0 .concat8 [ 1 1 1 1], L_0x55c31c0c5a60, L_0x55c31c0c5d90, L_0x55c31c0c6010, L_0x55c31c0c6470;
+L_0x55c31c0c6560 .part v0x55c31c0c57d0_0, 3, 1;
+L_0x55c31c0c66a0 .part v0x55c31c0c5890_0, 3, 1;
+    .scope S_0x55c31c0a47a0;
+T_0 ;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 4;
+    %store/vec4 v0x55c31c0c57d0_0, 0, 4;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 4;
+    %store/vec4 v0x55c31c0c5890_0, 0, 4;
+    %delay 1, 0;
+    %vpi_call 2 13 "$display", "\012\012" {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 14 "$display", "x:\011%b", v0x55c31c0c57d0_0 {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 15 "$display", "\011XOR" {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 16 "$display", "y:\011%b", v0x55c31c0c5890_0 {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 17 "$display", "\011____" {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 18 "$display", "z:\011%b", v0x55c31c0c5960_0 {0 0 0};
+    %delay 1, 0;
+    %pushi/vec4 5, 0, 4;
+    %store/vec4 v0x55c31c0c57d0_0, 0, 4;
+    %delay 1, 0;
+    %pushi/vec4 2, 0, 4;
+    %store/vec4 v0x55c31c0c5890_0, 0, 4;
+    %delay 1, 0;
+    %vpi_call 2 22 "$display", "\012\012" {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 23 "$display", "x:\011%b", v0x55c31c0c57d0_0 {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 24 "$display", "\011XOR" {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 25 "$display", "y:\011%b", v0x55c31c0c5890_0 {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 26 "$display", "\011____" {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 27 "$display", "z:\011%b", v0x55c31c0c5960_0 {0 0 0};
+    %delay 1, 0;
+    %pushi/vec4 7, 0, 4;
+    %store/vec4 v0x55c31c0c57d0_0, 0, 4;
+    %delay 1, 0;
+    %pushi/vec4 12, 0, 4;
+    %store/vec4 v0x55c31c0c5890_0, 0, 4;
+    %delay 1, 0;
+    %vpi_call 2 31 "$display", "\012\012" {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 32 "$display", "x:\011%b", v0x55c31c0c57d0_0 {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 33 "$display", "\011XOR" {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 34 "$display", "y:\011%b", v0x55c31c0c5890_0 {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 35 "$display", "\011____" {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 36 "$display", "z:\011%b", v0x55c31c0c5960_0 {0 0 0};
+    %delay 1, 0;
+    %pushi/vec4 15, 0, 4;
+    %store/vec4 v0x55c31c0c57d0_0, 0, 4;
+    %delay 1, 0;
+    %pushi/vec4 15, 0, 4;
+    %store/vec4 v0x55c31c0c5890_0, 0, 4;
+    %delay 1, 0;
+    %vpi_call 2 40 "$display", "\012\012" {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 41 "$display", "x:\011%b", v0x55c31c0c57d0_0 {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 42 "$display", "\011XOR" {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 43 "$display", "y:\011%b", v0x55c31c0c5890_0 {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 44 "$display", "\011____" {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 45 "$display", "z:\011%b", v0x55c31c0c5960_0 {0 0 0};
+    %delay 1, 0;
+    %pushi/vec4 10, 0, 4;
+    %store/vec4 v0x55c31c0c57d0_0, 0, 4;
+    %delay 1, 0;
+    %pushi/vec4 9, 0, 4;
+    %store/vec4 v0x55c31c0c5890_0, 0, 4;
+    %delay 1, 0;
+    %vpi_call 2 49 "$display", "\012\012" {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 50 "$display", "x:\011%b", v0x55c31c0c57d0_0 {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 51 "$display", "\011XOR" {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 52 "$display", "y:\011%b", v0x55c31c0c5890_0 {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 53 "$display", "\011____" {0 0 0};
+    %delay 1, 0;
+    %vpi_call 2 54 "$display", "z:\011%b", v0x55c31c0c5960_0 {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "xor_4bit_tb.v";
+    "./xor_4bit.v";

@@ -1,6 +1,6 @@
 //----------------------------------------------//
 // Sumador de dos numeros de 4 bits             //
-// Nombre del archivo: x4bit_adder               //
+// Nombre del archivo: adder_4bit.v             //
 // Electronica III - Grupo 4                    //
 // ---------------------------------------------//
 
