@@ -10,7 +10,7 @@ CFLAGS   =
 SRCDIR   = src
 BINDIR   = bin
 
-SOURCES  := $(wildcard $(SRCDIR)/*.v)
+SOURCES  := $(wildcard $(SRCDIR)/$(TARGET).v)
 OBJECTS  := $(SOURCES:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
 rm       = rm -f
 
