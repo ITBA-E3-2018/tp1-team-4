@@ -5,7 +5,7 @@
 // Electronica III - Grupo 4                //
 // -----------------------------------------//
 
-`include "demux_2x4.v"
+`include "src/demux_2x4.v"
 
 module demux_tb;
     reg[1:0]    x;
