@@ -8,8 +8,6 @@ module demux_tb;
 
     demux1to4 dut(out, sel, data, enable);
 
-    integer k;
-
     initial begin
 
         enable = 0; data = 0; sel = 0; #10;

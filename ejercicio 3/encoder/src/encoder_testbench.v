@@ -8,40 +8,54 @@
 `include "src/prior_encoder_4x2.v"
 
 module ecoder_tb;
-    reg[3:0]    x;
-    wire[1:0]   z;
-    wire        y;
+    reg[3:0]    in;
+    wire[1:0]   out;
+    wire        flag;
+    reg         enable;
 
-    encoder_x4  encoder(z,y,x);
+    encoder_x4  encoder(out,flag,in,enable);
 
     initial begin
-        #1 $display("Test Bench Encoder con prioridad 4x2");
+    
+        enable = 0; in = 0; #10;
+        enable = 0; in = 1; #10;
+        enable = 0; in = 2; #10;
+        enable = 0; in = 3; #10;
+        enable = 0; in = 4; #10;
+        enable = 0; in = 5; #10;
+        enable = 0; in = 6; #10;
+        enable = 0; in = 7; #10;
+        enable = 0; in = 8; #10;
+        enable = 0; in = 9; #10;
+        enable = 0; in = 10; #10;
+        enable = 0; in = 11; #10;
+        enable = 0; in = 12; #10;
+        enable = 0; in = 13; #10;
+        enable = 0; in = 14; #10;
+        enable = 0; in = 15; #10;
 
-        // Casos "sin prioridad"
-        #1 $display("Casos 'sin prioridad'");
-        #1 x = 4'b0001;
-        #1 $display("Input: %b -- Output: %b -- Control: %b", x, z, y);
-        #1 x = 4'b0010;
-        #1 $display("Input: %b -- Output: %b -- Control: %b", x, z, y);
-        #1 x = 4'b0100;
-        #1 $display("Input: %b -- Output: %b -- Control: %b", x, z, y);
-        #1 x = 4'b1000;
-        #1 $display("Input: %b -- Output: %b -- Control: %b", x, z, y);
+        enable = 1; in = 0; #10;
+        enable = 1; in = 1; #10;
+        enable = 1; in = 2; #10;
+        enable = 1; in = 3; #10;
+        enable = 1; in = 4; #10;
+        enable = 1; in = 5; #10;
+        enable = 1; in = 6; #10;
+        enable = 1; in = 7; #10;
+        enable = 1; in = 8; #10;
+        enable = 1; in = 9; #10;
+        enable = 1; in = 10; #10;
+        enable = 1; in = 11; #10;
+        enable = 1; in = 12; #10;
+        enable = 1; in = 13; #10;
+        enable = 1; in = 14; #10;
+        enable = 1; in = 15; #10;
 
-        // Casos con prioridad
-        #1 $display("Casos 'con prioridad'");
-        #1 x = 4'b0101;
-        #1 $display("Input: %b -- Output: %b -- Control: %b", x, z, y);
-        #1 x = 4'b1010;
-        #1 $display("Input: %b -- Output: %b -- Control: %b", x, z, y);
-        #1 x = 4'b1100;
-        #1 $display("Input: %b -- Output: %b -- Control: %b", x, z, y);
-        #1 x = 4'b1010;
-        #1 $display("Input: %b -- Output: %b -- Control: %b", x, z, y);
-
-        //Caso todos ceros
-        #1 $display("Caso todos ceros");
-        #1 x = 4'b0000;
-        #1 $display("Input: %b -- Output: %b -- Control: %b", x, z, y);
+        $finish;
     end
+
+    initial
+        $monitor("At time %2t:\n\tenable = %b - in = %b - out = %b - flag = %b",
+                 $time, enable, in, out, flag);
+
 endmodule

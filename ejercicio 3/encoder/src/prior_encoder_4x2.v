@@ -4,19 +4,29 @@
 // Electronica III - Grupo 4                    //
 // ---------------------------------------------//
 
-module encoder_x4(z, y, x);
-    
-    // Inputs-Outputs
-    input[3:0]  x;
-    output[1:0] z;
-    output      y;     
+module encoder_x4(out, flag, in, enable);
+    input enable;
+    input[3:0] in;
+    output reg[1:0] out;
+    output reg flag;
 
-    // Descripción de nodos internos
-    wire    net1, net2;
-    not(net1, x[2]);
-    and(net2, net1, x[1]);
+    always @(in, enable)
 
-    or(z[1], x[3], x[2]);
-    or(z[0], x[1], net2);
-    or(y, x[0], x[1], x[2], x[3]);
+        if(in == 0)
+            flag = 0;
+        else if(in !=0)
+            flag = 1;
+        else if(enable == 1)
+            if(in == 0)
+                out = 0;
+            else if((in == 2)||(in == 3))
+                out = 1;
+            else if((in > 3) && (in < 8))
+                out = 2;
+            else if((in > 7) && (in <=15))
+                out = 3;
+        else if(enable == 0)
+            out = 0;
+
+
 endmodule
