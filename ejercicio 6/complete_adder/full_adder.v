@@ -4,16 +4,10 @@
 // Electronica III - Grupo 4                    //
 // ---------------------------------------------//
 
-module complete_adder(s, c_out, c_in, x, y);
-    input   x, y, c_in;
-    output  s, c_out;
-    
-    wire    net1, net2, net3;
+module full_adder(sum, c_out, c_in, in1, in2);
+    input   in1, in2, c_in;
+    output  sum, c_out;
 
-    xor(net1, x, y);
-    and(net2, x, y);
-    and(net3, c_in, net1);
+    assign{c_out,sum} = in1 + in2 + c_in;
 
-    xor(s, c_in, net1);
-    or(c_out, net2, net3);
 endmodule
