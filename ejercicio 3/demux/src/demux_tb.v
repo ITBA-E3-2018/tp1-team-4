@@ -11,8 +11,6 @@ module demux_tb;
     integer k;
 
     initial begin
-        $dumpfile("demux1to4.vcd");
-        $dumpvars(0, demux_tb);
 
         enable = 0; data = 0; sel = 0; #10;
         enable = 0; data = 0; sel = 1; #10;
