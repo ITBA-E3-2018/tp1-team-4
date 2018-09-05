@@ -53,14 +53,20 @@ int main(){
 
     resolution=pow(2.00,(-1*(fractionaryDigits)));
     if(!isSigned){
-        rangeupper=pow(2,(-(wholeDigits)));
+        while(wholeDigits>0)
+        rangeupper+=pow(2,((--wholeDigits)));
+        while(fractionaryDigits>0)
+        rangeupper+=pow(2,(-(fractionaryDigits--)));
         rangelower=0;
         rangemodule=(rangeupper-rangelower)/resolution;
     }
     else{
-        rangeupper=(pow(2,(-(wholeDigits)))/2)-1;
-        rangelower=(-((pow(2,(-(wholeDigits)))/2)));
-        rangemodule=(rangeupper-rangelower)/resolution;
+        while(wholeDigits>0)
+        rangeupper+=pow(2,((--wholeDigits)-1));
+        while(fractionaryDigits>0)
+        rangeupper+=pow(2,(-(fractionaryDigits--)));
+        rangelower=(-rangeupper);
+        rangemodule=(rangeupper-rangelower)/resolution+1;
     }
 
     printf("When using this convention, the resolution for representable numbers is %f, the range is [%f,%f], and the amount of different numbers is %f.",resolution,rangelower,rangeupper,rangemodule);
