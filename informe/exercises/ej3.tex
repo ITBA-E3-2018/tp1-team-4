@@ -8,4 +8,20 @@ vez, y la salida presenta el n\'umero binario que identifica a la entrada que es
 con prioridad, en cambio, cada entrada tiene asociada una prioridad, y en la salida se mostrara el c\'odigo 
 que representa la salida con mayor prioridad en 1. \par
 \noindent
+Para el dise\'no del encoder, se utilizo la siguiente tabla de verdad:
+
+\begin{center}
+    \begin{tabular}{*{5}{C|}|*{3}{C|}}
+        \multicolumn{5}{|C}{Inputs}
+        \hline
+        $x_{3}$ & $x_{2}$ & $x_{1}$ & $x_{0}$ & $enable$ & $z_{1}$ & $z_{0}$ & $flag$ \\
+        \hline
+        0 & 0 & 0 & 0 & 1 & d & d & 0 \\
+        x & x & x & x & 0 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 1 & 1 & 0 & 0 & 1 \\
+        0 & 0 & 1 & x & 1 & 0 & 1 & 1 \\
+        0 & 1 & x & x & 1 & 1 & 0 & 1 \\
+        1 & x & x & x & 1 & 1 & 1 & 1 \\
+    \end{tabular}    
+\end{center}
 
