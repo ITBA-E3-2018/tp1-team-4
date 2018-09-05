@@ -1,0 +1,13 @@
+# Fdb version 3
+["pdflatex"] 1536173335 "TP1_Informe.tex" "TP1_Informe.pdf" "TP1_Informe" 1536173335
+  "/etc/texmf/web2c/texmf.cnf" 1536171671 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1536171680 724917 f9683cec010fcdbeadb7e2e7923fa217 ""
+  "TP1_Informe.aux" 1536173335 8 a94a2480d3289e625eea47cd1b285758 ""
+  "TP1_Informe.tex" 1536171490 119 4789c0299a138f1257b0da8ac7132629 ""
+  "scrartcl.cls" 0 -1 0 ""
+  "setup/preamble.tex" 1536167114 1383 ed6ba1d8bba929b34feb34e44fcd479e ""
+  (generated)
+  "TP1_Informe.log"
+  "TP1_Informe.pdf"
