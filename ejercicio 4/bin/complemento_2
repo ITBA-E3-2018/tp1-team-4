@@ -1,0 +1,82 @@
+#! /usr/bin/vvp
+:ivl_version "10.1 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x559023b2d980 .scope module, "complemento_2" "complemento_2" 2 5;
+ .timescale 0 0;
+    .port_info 0 /INPUT 4 "in"
+    .port_info 1 /OUTPUT 4 "out"
+o0x7f210c5eb5e8 .functor BUFZ 1, C4<z>; HiZ drive
+; Elide local net with no drivers, v0x559023b506b0_0 name=_s26
+o0x7f210c5eb618 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0x559023b507b0_0 .net "in", 3 0, o0x7f210c5eb618;  0 drivers
+v0x559023b50890_0 .net "out", 3 0, L_0x559023b51d30;  1 drivers
+L_0x559023b50ab0 .part o0x7f210c5eb618, 0, 1;
+L_0x559023b50ba0 .part o0x7f210c5eb618, 1, 1;
+L_0x559023b51420 .part o0x7f210c5eb618, 0, 1;
+L_0x559023b514c0 .part o0x7f210c5eb618, 1, 1;
+L_0x559023b51620 .part o0x7f210c5eb618, 2, 1;
+L_0x559023b517d0 .part o0x7f210c5eb618, 0, 1;
+L_0x559023b51900 .part o0x7f210c5eb618, 1, 1;
+L_0x559023b519f0 .part o0x7f210c5eb618, 2, 1;
+L_0x559023b51c40 .part o0x7f210c5eb618, 3, 1;
+L_0x559023b51d30 .concat [ 1 1 1 1], o0x7f210c5eb5e8, L_0x559023b509b0, L_0x559023b512c0, L_0x559023b51730;
+S_0x559023b2d5a0 .scope module, "y1_module" "y1_complemento2" 2 9, 3 1 0, S_0x559023b2d980;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a0"
+    .port_info 1 /INPUT 1 "a1"
+    .port_info 2 /OUTPUT 1 "y1"
+L_0x559023b509b0 .functor XOR 1, L_0x559023b50ab0, L_0x559023b50ba0, C4<0>, C4<0>;
+v0x559023b2fbf0_0 .net "a0", 0 0, L_0x559023b50ab0;  1 drivers
+v0x559023b2f7f0_0 .net "a1", 0 0, L_0x559023b50ba0;  1 drivers
+v0x559023b2e180_0 .net "y1", 0 0, L_0x559023b509b0;  1 drivers
+S_0x559023b4f5e0 .scope module, "y2_module" "y2_complemento2" 2 10, 4 1 0, S_0x559023b2d980;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a0"
+    .port_info 1 /INPUT 1 "a1"
+    .port_info 2 /INPUT 1 "a2"
+    .port_info 3 /OUTPUT 1 "y2"
+L_0x559023b50ce0 .functor NOT 1, L_0x559023b51620, C4<0>, C4<0>, C4<0>;
+L_0x559023b50d50 .functor NOT 1, L_0x559023b514c0, C4<0>, C4<0>, C4<0>;
+L_0x559023b50e20 .functor NOT 1, L_0x559023b51420, C4<0>, C4<0>, C4<0>;
+L_0x559023b50ef0 .functor AND 1, L_0x559023b50ce0, L_0x559023b51420, C4<1>, C4<1>;
+L_0x559023b51060 .functor AND 1, L_0x559023b50ce0, L_0x559023b514c0, C4<1>, C4<1>;
+L_0x559023b51120 .functor AND 1, L_0x559023b50d50, L_0x559023b50e20, L_0x559023b51620, C4<1>;
+L_0x559023b512c0 .functor OR 1, L_0x559023b50ef0, L_0x559023b51060, L_0x559023b51120, C4<0>;
+v0x559023b2c8c0_0 .net "a0", 0 0, L_0x559023b51420;  1 drivers
+v0x559023b4f7f0_0 .net "a1", 0 0, L_0x559023b514c0;  1 drivers
+v0x559023b4f8b0_0 .net "a2", 0 0, L_0x559023b51620;  1 drivers
+v0x559023b4f950_0 .net "net1", 0 0, L_0x559023b50ce0;  1 drivers
+v0x559023b4fa10_0 .net "net2", 0 0, L_0x559023b50d50;  1 drivers
+v0x559023b4fb20_0 .net "net3", 0 0, L_0x559023b50e20;  1 drivers
+v0x559023b4fbe0_0 .net "net4", 0 0, L_0x559023b50ef0;  1 drivers
+v0x559023b4fca0_0 .net "net5", 0 0, L_0x559023b51060;  1 drivers
+v0x559023b4fd60_0 .net "net6", 0 0, L_0x559023b51120;  1 drivers
+v0x559023b4fe20_0 .net "y2", 0 0, L_0x559023b512c0;  1 drivers
+S_0x559023b4ff60 .scope module, "y3_moudle" "y3_complemento2" 2 11, 5 1 0, S_0x559023b2d980;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a3"
+    .port_info 1 /INPUT 1 "a2"
+    .port_info 2 /INPUT 1 "a1"
+    .port_info 3 /INPUT 1 "a0"
+    .port_info 4 /OUTPUT 1 "y3"
+L_0x559023b516c0 .functor OR 1, L_0x559023b51c40, L_0x559023b519f0, L_0x559023b51900, C4<0>;
+L_0x559023b51730 .functor XOR 1, L_0x559023b516c0, L_0x559023b517d0, C4<0>, C4<0>;
+v0x559023b50160_0 .net "a0", 0 0, L_0x559023b51c40;  1 drivers
+v0x559023b50220_0 .net "a1", 0 0, L_0x559023b519f0;  1 drivers
+v0x559023b502e0_0 .net "a2", 0 0, L_0x559023b51900;  1 drivers
+v0x559023b50380_0 .net "a3", 0 0, L_0x559023b517d0;  1 drivers
+v0x559023b50440_0 .net "net1", 0 0, L_0x559023b516c0;  1 drivers
+v0x559023b50550_0 .net "y3", 0 0, L_0x559023b51730;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 6;
+    "N/A";
+    "<interactive>";
+    "src/complemento_2.v";
+    "./src/y1.v";
+    "./src/y2.v";
+    "./src/y3.v";
