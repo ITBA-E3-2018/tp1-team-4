@@ -55,7 +55,6 @@ module ecoder_tb;
     end
 
     initial
-        $monitor("At time %2t:\n\tenable = %b - in = %b - out = %b - flag = %b",
-                 $time, enable, in, out, flag);
+        $monitor("enable = %b - in = %b - out = %b - flag = %b", enable, in, out, flag);
 
 endmodule

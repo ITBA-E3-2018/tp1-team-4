@@ -10,13 +10,13 @@ module encoder_x4(out, flag, in, enable);
     output reg[1:0] out;
     output reg flag;
 
-    always @(in, enable)
+    always @(in, enable)begin
 
-        if(in == 0)
-            flag = 0;
-        else if(in !=0)
-            flag = 1;
-        else if(enable == 1)
+    if(in == 0)
+        flag <= 0;
+    else if(in != 0)
+        flag <= 1;
+    if(enable == 1)begin
             if(in == 0)
                 out = 0;
             else if((in == 2)||(in == 3))
@@ -25,8 +25,8 @@ module encoder_x4(out, flag, in, enable);
                 out = 2;
             else if((in > 7) && (in <=15))
                 out = 3;
-        else if(enable == 0)
-            out = 0;
-
-
+    end
+    else if(enable == 0)
+        out <= 0;
+    end
 endmodule
