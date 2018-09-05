@@ -21,16 +21,16 @@ int main(){
 
     while(status){
     printf("\nEnter 0 for unsigned, 1 for signed: ");
-    do {
+    do { // Waits for input, checks if an integer is entered. 
         if (errorCounter!=0) printf("\nERROR. Not an integer! Try again!\n\nEnter 0 for unsigned, 1 for signed:");
      if (!fgets(buf, sizeof buf, stdin))
         break;
         buf[strlen(buf) - 1] = 0;
         temp = strtol(buf, &end, 10);
         errorCounter++;
-    } while (end != buf + strlen(buf));
+    } while (end != buf + strlen(buf)); // Integer check
     errorCounter=0;
-    if(temp==0||temp==1){
+    if(temp==0||temp==1){ // Checks whether the input is what was requested
         isSigned=temp;
         status=SUCCESS;
         }
@@ -82,7 +82,7 @@ int main(){
     resolution=pow(2.00,(-1*(fractionaryDigits)));
     if(!isSigned){
         while(wholeDigits>0)
-        rangeupper+=pow(2,((--wholeDigits)));
+        rangeupper+=pow(2,((--wholeDigits))); // 
         while(fractionaryDigits>0)
         rangeupper+=pow(2,(-(fractionaryDigits--)));
         rangelower=0;
