@@ -3,10 +3,10 @@
 module BCD_tb;
     reg[3:0]    in1, in2;
     reg         Cin;
-    wire[3:0]   out;
+    wire[3:0]   LSout, MSout;
     wire        Cout;
 
-    BCD_adder dut(in1, in2, Cin, out, Cout);
+    BCD_adder dut(in1, in2, Cin, MSout, LSout);
 
     initial
     begin
@@ -26,7 +26,7 @@ module BCD_tb;
     end
 
     initial
-        $monitor("Cin = %b --- in1 = %b(%d) --- in2 = %b(%d) --- out = %b(%d) --- Cout = %b",
-                 Cin, in1, in1, in2, in2, out, out, Cout);
+        $monitor("Cin = %b --- in1 = %b(%d) --- in2 = %b(%d) --- out = %b %b(%d%d)",
+                 Cin, in1, in1, in2, in2, MSout, LSout, MSout, LSout);
 
 endmodule
