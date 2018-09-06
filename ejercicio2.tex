@@ -1,0 +1,170 @@
+%% LyX 2.3.0 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[friulan,spanish,english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{textcomp}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+\makeatother
+
+\usepackage{babel}
+\addto\shorthandsspanish{\spanishdeactivate{~<>.}}
+
+\begin{document}
+
+\part*{1ª PARTE}
+
+Teniendo la expresión en maxitérminos: $f(d,c,b,a)=\prod (M_{0},M_{1},M_{5},M_{7},M_{8},M_{10},M_{14},M_{15})$
+Realizaremos una simplificación de esta productoria con álgebra booleana,
+pero antes identificaremos cada término:
+
+Maxitérminos: \\
+$M_{0}= d+c+b+a\ ;$ 
+$M_{1}= d+c+b+\overline{a}\ ;$ 
+$M_{5}=d+\overline{c}+b+\overline{a}\ ;$ 
+$M_{7}=d+\overline{c}+\overline{b}+\overline{a}\ ;$ \\
+$M_{8}=\overline{d}+c+b+a\ ;$
+$M_{10}=\overline{d}+c+\overline{b}+a\ ;$
+$M_{14}=\overline{d}+\overline{c}+\overline{b}+a\ ;$
+$M_{15}=\overline{d}+\overline{c}+\overline{b}+\overline{a}$ 
+
+Ahora pasaremos a realizar la productoria:
+
+$f(d,c,b,a) = M_{0} * M_{1} * M_{5} * M_{7} * M_{8} * M_{10} * M_{14} * M_{15} \\ 
+f=(d+c+b+a)*(d+c+b+\overline{a})*(d+\overline{c}+b+\overline{a})*(d+\overline{c}+\overline{b}+\overline{a})* \\ (\overline{d}+c+b+a)*(\overline{d}+c+\overline{b}+a)*(\overline{d}+\overline{c}+\overline{b}+a)*(\overline{d}+\overline{c}+\overline{b}+\overline{a})$
+
+Podemos notar que entre el maxitérmino $M_{0}$ y $M_{1}$ se puede
+aplicar la propiedad de combinación y eliminar la variable $a$ ya
+que:
+
+$(d+c+b+a)*(d+c+b+\overline{a})=(d+c+b)$
+
+De la misma forma en los términos $M_{5}$ y $M_{7}$ se puede eliminar
+la variable $b$, entre los términos $M_{8}$ y $M_{10}$ se elimina
+la variable $b$, y entre los términos $M_{14}$ y $M_{15}$ se elimina
+la variable $a$. Entonces se puede eliminar algunas variables y reducir
+la ecuación a:
+
+$f(d,c,b,a) = (d+c+b)*(d+\overline{c}+\overline{a})*(\overline{d}+c+a)*(\overline{d}+\overline{c}+\overline{b})$
+
+Para no complicar tanto la ecuación y no enredarnos vamos a separar
+la función principal en 2, para que $f(d,c,b,a)=f_{1}(d,c,b,a)*f_{2}(d,c,b,a)$,
+definiendo a cada una de la siguiente forma:
+
+$f_{1}(d,c,b,a)=(d+c+b)*(\overline{d}+\overline{c}+\overline{b})$
+y $f_{2}(d,c,b,a)=(\overline{d}+c+a)*(d+\overline{c}+\overline{a})$
+
+A partir de ahora analizaremos solo $f_{1}$ y veremos el resultado
+que se obtiene. No haremos el análisis para $f_{2}$ ya que será el
+mismo pero con un resultado final distinto. 
+
+$f_{1}=(d+c+b)*(\overline{d}+\overline{c}+\overline{b})=d*\overline{c}+d*\overline{b}+c*\overline{d}+c*\overline{b}+b*\overline{d}+b*\overline{c}+d*\overline{d}+c*\overline{c}+b*\overline{b}$
+
+Vamos a recordar un teorema de 1 variblae $X*\overline{X}=0$ y a
+reordenar los términos:
+
+$f_{1}= b*\overline{c} + \overline{c}*d + \overline{b}*d + b*\overline{d} +  \overline{d}*c + \overline{b}*c $
+
+Para poder seguir reduciendo la ecuación vamos a utilizar la propiedad
+del consenso $(x+y)*(y+z)*(\overline{x}+z)=(x+y)*(\overline{x}+z)$
+con los primeros 3 términos, y luego con los segundos 3 términos,
+entonces:
+
+$b*\overline{c}+\overline{c}*d+\overline{b}*d = b*\overline{c}+\overline{b}*d$ \ ;\  $b*\overline{d}+\overline{d}*c+\overline{b}*c = b*\overline{d} + \overline{b}*c$
+
+$f_{1}=b*\overline{c} + \overline{b}*d + b*\overline{d} + \overline{b}*c=(\ b*(\overline{c}+\overline{d})\ +\ \overline{b}*(c+d)\ )$
+
+De la misma forma, para $f_{2}$ quedará:
+
+$f_{2}=a*\overline{c} + a*\overline{d} + \overline{a}*c + \overline{a}*d =(\ a*(\overline{c}+\overline{d})\ +\ \overline{a}*(c+d)\ ) $
+
+Volviendo a $f$ obtenemos:
+
+$f=f_{1}*f_{2}=(\ b*(\overline{c}+\overline{d})\ +\ \overline{b}*(c+d)\ )*(\ a*(\overline{c}+\overline{d})\ +\ \overline{a}*(c+d)\ )$
+
+Aplicando la propiedad distributiva:
+
+$f=ab(\overline{c}+d)(\overline{c}+\overline{d})+a\overline{b}(c+d)(\overline{c}+d)+\overline{a}b(c+\overline{d})(\overline{c}+\overline{d})+\overline{a}\overline{b}(c+\overline{d})(c+d)$
+
+Para reducir estos términos utilizamos la propiedad de combinación
+de 2 variables, ya que $(X+Y)(X+\overline{Y})=X$:
+
+$(\overline{c}+d)(\overline{c}+\overline{d})=\overline{c} \ ;\ (c+d)(\overline{c}+d)=d\ ;\ (c+\overline{d})(\overline{c}+\overline{d})=\overline{d}\ ;\ (c+\overline{d})(c+d)=c$
+
+Entonces como resultado final obtenemos que:
+
+$f(d,c,b,a)=ab\overline{c}+a\overline{b}d+\overline{a}b\overline{d}+\overline{a}\overline{b}c=\overline{d}b\overline{a}+d\overline{b}a+\overline{c}ba+c\overline{b}\overline{a}$
+
+\part*{2ª PARTE}
+
+Ahora veremos que sucedería si vieramos el problema desde los mapas
+de Karnaugh, teniendo los mismos maxitérminos.
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+dc \textbackslash{} ba & 00 & 01 & 11 & 10\tabularnewline
+\hline 
+00 & 0 & 1 & 1 & 0\tabularnewline
+\hline 
+01 & 0 & 0 & 1 & 1\tabularnewline
+\hline 
+11 & 1 & 0 & 0 & 1\tabularnewline
+\hline 
+10 & 1 & 1 & 0 & 0\tabularnewline
+\hline 
+\end{tabular}
+
+Agrupamos todos los maxitérminos de a pares verticales, $M_{0}$ con
+$M_{1}$, $M_{5}$ con $M_{7}$, $M_{8}$ con $M_{10}$ y $M_{14}$
+con $M_{15}$. Al primer par lo llamaremos $I_{1}$, al segundo $I_{2}$,
+al tercero $I_{3}$ y el último lo llamaremos $I_{4}$
+
+\part*{3 PARTE }
+
+\selectlanguage{friulan}%
+DaDo el resultado final, el circuito utilizando solo compuertas NOT,
+AND y OR es el siguiente:
+
+\begin{figure}
+\caption{\foreignlanguage{english}{TP1EJ2c\_electroiii}}
+
+\selectlanguage{english}%
+\selectlanguage{friulan}%
+\end{figure}
+
+\selectlanguage{english}%
+
+\part*{4 PARTE }
+
+\selectlanguage{spanish}%
+Para utilizar solo compuertas NAND por ser el grupo 4, necesitamos
+trabajar sobre $f(d,c,b,a)$ viendo que si se niega 2 veces la ecuación
+final para mantener la igualdad, luego de aplicar el teorema de De
+Morgan, obtendremos un resultado que puede tratarse de un conjunto
+de compuertas NAND y NOT:
+
+$\overline{\overline{f}}=\overline{\overline{\overline{d}b\overline{a}+d\overline{b}a+\overline{c}ba+c\overline{b}\overline{a}}}=\overline{\overline{(\overline{d}b\overline{a})} * \overline{(d\overline{b}a)} * \overline{(\overline{c}ba)} * \overline{(c\overline{b}\overline{a})}}$
+
+Analizando el nuevo resultado final podemos notar que se trata solo
+de productos negados y algunas entradas negadas, siendo así necesarias
+5 compuertas NAND's y 4 NOT's, o simplemente 9 NAND's (el ejercicio
+solo pide NAND). El circuito sería el siguiente:
+
+\begin{figure}
+\selectlanguage{english}%
+
+\selectlanguage{spanish}%
+\caption{TP1EJ2d\_electroiii}
+
+\selectlanguage{english}%
+\selectlanguage{spanish}%
+\end{figure}
+\selectlanguage{english}%
+
+\end{document}
