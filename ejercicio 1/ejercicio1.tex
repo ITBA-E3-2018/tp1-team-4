@@ -1,0 +1,10 @@
+\newpage
+\section*{Ejercicio 1}
+Los sistemas digitales disponen de registros y buses de tamaños específicos que limitan la cantidad de bits disponibles para la representación de los datos. Es habitual mencionar que el sistema trabaja con datos de 8, 16, 32 bits, o en punto flotante de simple/doble precisión. Por lo tanto, las representaciones que se utilizan tienen limitaciones, y los cálculos están siempre sujetos a aproximaciones y por ende a errores. Para caracterizar los sistemas de representación y compararlos se definen tres parámetros importantes:    
+\begin{itemize}
+	\item Rango: El rango de un sistema está dado por el número mínimo y el número máximo representables. Por ejemplo, en binario con cinco dígitos es [0, 31]
+	\item Capacidad de representación: Es la cantidad de tiras distintas que se pueden representar. Por ejemplo, si tengo un sistema restringido a 5 bits, sería 25 tiras, es decir, 32. 
+	\item Resolución: Es la mínima diferencia entre un número representable y el siguiente. Por ejemplo, en binario con dos dígitos fraccionarios es 0.01.  
+\end{itemize}
+En este ejercicio se implementó un código en C para determinar, a partir de la cantidad de dígitos de la parte entera y fraccionaria de cierta convención de punto fijo (signado y no signado), el rango, la capacidad y la resolución.
+
