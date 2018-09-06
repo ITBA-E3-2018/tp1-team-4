@@ -18,13 +18,13 @@
 
 \begin{document}
 
-\part*{1ª PARTE}
+\part*{1ï¿½ PARTE}
 
-Teniendo la expresión en maxitérminos: $f(d,c,b,a)=\prod (M_{0},M_{1},M_{5},M_{7},M_{8},M_{10},M_{14},M_{15})$
-Realizaremos una simplificación de esta productoria con álgebra booleana,
-pero antes identificaremos cada término:
+Teniendo la expresiï¿½n en maxitï¿½rminos: $f(d,c,b,a)=\prod (M_{0},M_{1},M_{5},M_{7},M_{8},M_{10},M_{14},M_{15})$
+Realizaremos una simplificaciï¿½n de esta productoria con ï¿½lgebra booleana,
+pero antes identificaremos cada tï¿½rmino:
 
-Maxitérminos: \\
+Maxitï¿½rminos: \\
 $M_{0}= d+c+b+a\ ;$ 
 $M_{1}= d+c+b+\overline{a}\ ;$ 
 $M_{5}=d+\overline{c}+b+\overline{a}\ ;$ 
@@ -39,48 +39,48 @@ Ahora pasaremos a realizar la productoria:
 $f(d,c,b,a) = M_{0} * M_{1} * M_{5} * M_{7} * M_{8} * M_{10} * M_{14} * M_{15} \\ 
 f=(d+c+b+a)*(d+c+b+\overline{a})*(d+\overline{c}+b+\overline{a})*(d+\overline{c}+\overline{b}+\overline{a})* \\ (\overline{d}+c+b+a)*(\overline{d}+c+\overline{b}+a)*(\overline{d}+\overline{c}+\overline{b}+a)*(\overline{d}+\overline{c}+\overline{b}+\overline{a})$
 
-Podemos notar que entre el maxitérmino $M_{0}$ y $M_{1}$ se puede
-aplicar la propiedad de combinación y eliminar la variable $a$ ya
+Podemos notar que entre el maxitï¿½rmino $M_{0}$ y $M_{1}$ se puede
+aplicar la propiedad de combinaciï¿½n y eliminar la variable $a$ ya
 que:
 
 $(d+c+b+a)*(d+c+b+\overline{a})=(d+c+b)$
 
-De la misma forma en los términos $M_{5}$ y $M_{7}$ se puede eliminar
-la variable $b$, entre los términos $M_{8}$ y $M_{10}$ se elimina
-la variable $b$, y entre los términos $M_{14}$ y $M_{15}$ se elimina
+De la misma forma en los tï¿½rminos $M_{5}$ y $M_{7}$ se puede eliminar
+la variable $b$, entre los tï¿½rminos $M_{8}$ y $M_{10}$ se elimina
+la variable $b$, y entre los tï¿½rminos $M_{14}$ y $M_{15}$ se elimina
 la variable $a$. Entonces se puede eliminar algunas variables y reducir
-la ecuación a:
+la ecuaciï¿½n a:
 
 $f(d,c,b,a) = (d+c+b)*(d+\overline{c}+\overline{a})*(\overline{d}+c+a)*(\overline{d}+\overline{c}+\overline{b})$
 
-Para no complicar tanto la ecuación y no enredarnos vamos a separar
-la función principal en 2, para que $f(d,c,b,a)=f_{1}(d,c,b,a)*f_{2}(d,c,b,a)$,
+Para no complicar tanto la ecuaciï¿½n y no enredarnos vamos a separar
+la funciï¿½n principal en 2, para que $f(d,c,b,a)=f_{1}(d,c,b,a)*f_{2}(d,c,b,a)$,
 definiendo a cada una de la siguiente forma:
 
 $f_{1}(d,c,b,a)=(d+c+b)*(\overline{d}+\overline{c}+\overline{b})$
 y $f_{2}(d,c,b,a)=(\overline{d}+c+a)*(d+\overline{c}+\overline{a})$
 
 A partir de ahora analizaremos solo $f_{1}$ y veremos el resultado
-que se obtiene. No haremos el análisis para $f_{2}$ ya que será el
+que se obtiene. No haremos el anï¿½lisis para $f_{2}$ ya que serï¿½ el
 mismo pero con un resultado final distinto. 
 
 $f_{1}=(d+c+b)*(\overline{d}+\overline{c}+\overline{b})=d*\overline{c}+d*\overline{b}+c*\overline{d}+c*\overline{b}+b*\overline{d}+b*\overline{c}+d*\overline{d}+c*\overline{c}+b*\overline{b}$
 
 Vamos a recordar un teorema de 1 variblae $X*\overline{X}=0$ y a
-reordenar los términos:
+reordenar los tï¿½rminos:
 
 $f_{1}= b*\overline{c} + \overline{c}*d + \overline{b}*d + b*\overline{d} +  \overline{d}*c + \overline{b}*c $
 
-Para poder seguir reduciendo la ecuación vamos a utilizar la propiedad
+Para poder seguir reduciendo la ecuaciï¿½n vamos a utilizar la propiedad
 del consenso $(x+y)*(y+z)*(\overline{x}+z)=(x+y)*(\overline{x}+z)$
-con los primeros 3 términos, y luego con los segundos 3 términos,
+con los primeros 3 tï¿½rminos, y luego con los segundos 3 tï¿½rminos,
 entonces:
 
 $b*\overline{c}+\overline{c}*d+\overline{b}*d = b*\overline{c}+\overline{b}*d$ \ ;\  $b*\overline{d}+\overline{d}*c+\overline{b}*c = b*\overline{d} + \overline{b}*c$
 
 $f_{1}=b*\overline{c} + \overline{b}*d + b*\overline{d} + \overline{b}*c=(\ b*(\overline{c}+\overline{d})\ +\ \overline{b}*(c+d)\ )$
 
-De la misma forma, para $f_{2}$ quedará:
+De la misma forma, para $f_{2}$ quedarï¿½:
 
 $f_{2}=a*\overline{c} + a*\overline{d} + \overline{a}*c + \overline{a}*d =(\ a*(\overline{c}+\overline{d})\ +\ \overline{a}*(c+d)\ ) $
 
@@ -92,7 +92,7 @@ Aplicando la propiedad distributiva:
 
 $f=ab(\overline{c}+d)(\overline{c}+\overline{d})+a\overline{b}(c+d)(\overline{c}+d)+\overline{a}b(c+\overline{d})(\overline{c}+\overline{d})+\overline{a}\overline{b}(c+\overline{d})(c+d)$
 
-Para reducir estos términos utilizamos la propiedad de combinación
+Para reducir estos tï¿½rminos utilizamos la propiedad de combinaciï¿½n
 de 2 variables, ya que $(X+Y)(X+\overline{Y})=X$:
 
 $(\overline{c}+d)(\overline{c}+\overline{d})=\overline{c} \ ;\ (c+d)(\overline{c}+d)=d\ ;\ (c+\overline{d})(\overline{c}+\overline{d})=\overline{d}\ ;\ (c+\overline{d})(c+d)=c$
@@ -101,10 +101,10 @@ Entonces como resultado final obtenemos que:
 
 $f(d,c,b,a)=ab\overline{c}+a\overline{b}d+\overline{a}b\overline{d}+\overline{a}\overline{b}c=\overline{d}b\overline{a}+d\overline{b}a+\overline{c}ba+c\overline{b}\overline{a}$
 
-\part*{2ª PARTE}
+\part*{2ï¿½ PARTE}
 
-Ahora veremos que sucedería si vieramos el problema desde los mapas
-de Karnaugh, teniendo los mismos maxitérminos.
+Ahora veremos que sucederï¿½a si vieramos el problema desde los mapas
+de Karnaugh, teniendo los mismos maxitï¿½rminos.
 
 \begin{tabular}{|c|c|c|c|c|}
 \hline 
@@ -120,10 +120,10 @@ dc \textbackslash{} ba & 00 & 01 & 11 & 10\tabularnewline
 \hline 
 \end{tabular}
 
-Agrupamos todos los maxitérminos de a pares verticales, $M_{0}$ con
+Agrupamos todos los maxitï¿½rminos de a pares verticales, $M_{0}$ con
 $M_{1}$, $M_{5}$ con $M_{7}$, $M_{8}$ con $M_{10}$ y $M_{14}$
 con $M_{15}$. Al primer par lo llamaremos $I_{1}$, al segundo $I_{2}$,
-al tercero $I_{3}$ y el último lo llamaremos $I_{4}$
+al tercero $I_{3}$ y el ï¿½ltimo lo llamaremos $I_{4}$
 
 \part*{3 PARTE }
 
@@ -144,7 +144,7 @@ AND y OR es el siguiente:
 
 \selectlanguage{spanish}%
 Para utilizar solo compuertas NAND por ser el grupo 4, necesitamos
-trabajar sobre $f(d,c,b,a)$ viendo que si se niega 2 veces la ecuación
+trabajar sobre $f(d,c,b,a)$ viendo que si se niega 2 veces la ecuaciï¿½n
 final para mantener la igualdad, luego de aplicar el teorema de De
 Morgan, obtendremos un resultado que puede tratarse de un conjunto
 de compuertas NAND y NOT:
@@ -152,9 +152,9 @@ de compuertas NAND y NOT:
 $\overline{\overline{f}}=\overline{\overline{\overline{d}b\overline{a}+d\overline{b}a+\overline{c}ba+c\overline{b}\overline{a}}}=\overline{\overline{(\overline{d}b\overline{a})} * \overline{(d\overline{b}a)} * \overline{(\overline{c}ba)} * \overline{(c\overline{b}\overline{a})}}$
 
 Analizando el nuevo resultado final podemos notar que se trata solo
-de productos negados y algunas entradas negadas, siendo así necesarias
+de productos negados y algunas entradas negadas, siendo asï¿½ necesarias
 5 compuertas NAND's y 4 NOT's, o simplemente 9 NAND's (el ejercicio
-solo pide NAND). El circuito sería el siguiente:
+solo pide NAND). El circuito serï¿½a el siguiente:
 
 \begin{figure}
 \selectlanguage{english}%
