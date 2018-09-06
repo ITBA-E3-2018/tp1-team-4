@@ -1,6 +1,6 @@
 
 \section*{Ejercicio 4}
-En primer lugar a continuaci�n se presenta la tabla de verdad para la salida, la cual se presenta de la forma Y3, Y2, Y1, Y0 (bit m�s significativo al menos significativo y analogamente para la entrada).
+En primer lugar a continuacion se presenta la tabla de verdad para la salida, la cual se presenta de la forma Y3, Y2, Y1, Y0 (bit m�s significativo al menos significativo y analogamente para la entrada).
 \begin{table}[htb] 
 \centering  
 \begin{tabular}{|c|c|c|c|}  
@@ -47,7 +47,6 @@ En primer lugar a continuaci�n se presenta la tabla de verdad para la salida, 
 \end{table}
 
 Lo siguiente que se realizo fueron los mapas de Karnaugh para cada bit de la salida, para Y0 arriba a la izquierda,para Y1 arriba a la derecha, para Y2 abajo ala izquierda y para Y3 abajo a la derecha:
-Para Y0:
 \begin{table}[htb] 
 \centering
 \begin{tabular}{|c|c|c|c|l|}
@@ -88,10 +87,14 @@ Para Y0:
 \end{tabular}
 \end{table}
 
+<<<<<<< HEAD
 
 
 
 Con estos mapas de Karnaugh obtenemos para cada salida las siguientes expresiones en funci�n de los mint�rminos:
+=======
+Con estos mapas de Karnaugh obtenemos para cada salida las siguientes expresiones en funcion de los minterminos: \\
+>>>>>>> 2d375444eedd3546428ec1691f037185572457ee
 $Y0 = m_1 . m_3 . m_5 . m_7 m_{13} . m_{15} . m_9 . m_{11}$ \\
 $Y1 = m_1 . m_5 . m_{13} . m_9 + m_2 . m_6 . m_{16} . m_{10}$ \\
 $Y2 = m_4 . m_{12} + m_1 . m_3 . m_9 . m_{11} + m_3 . m_2 . m_{11} . m_{10}$\\
@@ -101,17 +104,21 @@ $Y0 = A0$\\
 $Y1 = A0 . \overline{A1} + \overline{A0} . A1$\\
 $Y2 = A0 . \overline{A2} + A1 . \overline{A2} + \overline{A0} . \overline{A1} . A2$\\
 $Y3 = A0 . \overline{A3} + A1 . \overline{A3} + A2 . \overline{A3} + \overline{A0} . \overline{A1} . \overline{A2} . A3$\\
+<<<<<<< HEAD
 Y por �ltimo podemos representar las salidas en funci�n de las entradas con las compuertas l�gicas como se puede observar en los gr�ficos que mostramos a continuaci�n, donde no representamos Y0 ya que es directamente igual a la entrada A0:
+=======
+Y por ultimo podemos representar las salidas en funcion de las entradas con las compuertas logicas como se puede observar en los graficos que mostramos a continuacion, donde no representamos Y0 ya que es directamente igual a la entrada A0:
+>>>>>>> 2d375444eedd3546428ec1691f037185572457ee
 
-\begin{figure}
+\begin{figure}[htb] 
   \includegraphics[width=\linewidth]{Y1CompuertasLogicas.png}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[htb] 
   \includegraphics[width=\linewidth]{Y2CompuertasLogicas.png}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[htb] 
   \includegraphics[width=\linewidth]{Y3CompuertasLogicas.png}
 \end{figure}
 
