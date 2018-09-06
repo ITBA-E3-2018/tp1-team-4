@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.9.5)  5 SEP 2018 22:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.9.5)  5 SEP 2018 23:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1133,169 +1133,137 @@ Package microtype Info: Loading generic protrusion settings for font family
 )
 (./ejercicio2/ejercicio2.tex
 
-./ejercicio2/ejercicio2.tex:3: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \documentclass
-                  [friulan,spanish,english]{article}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 2.
 
 
-./ejercicio2/ejercicio2.tex:4: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4 \usepackage
-               [T1]{fontenc}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 3.
 
 
-./ejercicio2/ejercicio2.tex:5: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.5 \usepackage
-               [latin9]{inputenc}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./ejercicio2/ejercicio2.tex:6: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6 \usepackage
-               {textcomp}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./ejercicio2/ejercicio2.tex:16: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.16 \usepackage
-                {babel}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./ejercicio2/ejercicio2.tex:19: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.19 \begin{document}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./ejercicio2/ejercicio2.tex:21: Package inputenc Error: Unicode char � (U+FFF
-D)
+./ejercicio2/ejercicio2.tex:5: Package inputenc Error: Unicode char � (U+FFFD
+)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.21 \part*{1� PARTE}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./ejercicio2/ejercicio2.tex:23: Package inputenc Error: Unicode char � (U+FFF
-D)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.23 Teniendo la expresi�
-                           n en maxit�rminos: $f(d,c,b,a)=\prod (M_{0},M_{...
+l.5 Teniendo la expresi�
+                          n en maxit�rminos: $f(d,c,b,a)=\prod (M_{0},M_{1...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./ejercicio2/ejercicio2.tex:23: Package inputenc Error: Unicode char � (U+FFF
-D)
+./ejercicio2/ejercicio2.tex:5: Package inputenc Error: Unicode char � (U+FFFD
+)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.23 Teniendo la expresi�n en maxit�
-                                        rminos: $f(d,c,b,a)=\prod (M_{0},M_{...
+l.5 Teniendo la expresi�n en maxit�
+                                       rminos: $f(d,c,b,a)=\prod (M_{0},M_{1...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 23.
+(Font)              scaled to size 10.07397pt on input line 5.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 23.
+(Font)              scaled to size 7.63599pt on input line 5.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 23.
+(Font)              scaled to size 5.51999pt on input line 5.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 23.
+(Font)              scaled to size 10.07397pt on input line 5.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 23.
+(Font)              scaled to size 7.63599pt on input line 5.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 23.
+(Font)              scaled to size 5.51999pt on input line 5.
 
-./ejercicio2/ejercicio2.tex:24: Package inputenc Error: Unicode char � (U+FFF
-D)
+./ejercicio2/ejercicio2.tex:6: Package inputenc Error: Unicode char � (U+FFFD
+)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.24 Realizaremos una simplificaci�
-                                     n de esta productoria con �lgebra boo...
+l.6 Realizaremos una simplificaci�
+                                    n de esta productoria con �lgebra bool...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./ejercicio2/ejercicio2.tex:24: Package inputenc Error: Unicode char � (U+FFF
-D)
+./ejercicio2/ejercicio2.tex:6: Package inputenc Error: Unicode char � (U+FFFD
+)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.24 ...mplificaci�n de esta productoria con �
+l.6 ...implificaci�n de esta productoria con �
                                                   lgebra booleana,
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./ejercicio2/ejercicio2.tex:7: Package inputenc Error: Unicode char � (U+FFFD
+)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 pero antes identificaremos cada t�
+                                        rmino:
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./ejercicio2/ejercicio2.tex:9: Package inputenc Error: Unicode char � (U+FFFD
+)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 Maxit�
+            rminos: \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./ejercicio2/ejercicio2.tex:24: Package inputenc Error: Unicode char � (U+FFF
+D)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 Podemos notar que entre el maxit�
+                                        rmino $M_{0}$ y $M_{1}$ se puede
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1309,59 +1277,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.25 pero antes identificaremos cada t�
-                                         rmino:
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./ejercicio2/ejercicio2.tex:27: Package inputenc Error: Unicode char � (U+FFF
-D)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.27 Maxit�
-             rminos: \\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./ejercicio2/ejercicio2.tex:42: Package inputenc Error: Unicode char � (U+FFF
-D)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.42 Podemos notar que entre el maxit�
-                                        rmino $M_{0}$ y $M_{1}$ se puede
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./ejercicio2/ejercicio2.tex:43: Package inputenc Error: Unicode char � (U+FFF
-D)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.43 aplicar la propiedad de combinaci�
+l.25 aplicar la propiedad de combinaci�
                                          n y eliminar la variable $a$ ya
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./ejercicio2/ejercicio2.tex:48: Package inputenc Error: Unicode char � (U+FFF
+./ejercicio2/ejercicio2.tex:30: Package inputenc Error: Unicode char � (U+FFF
 D)
 (inputenc)                not set up for use with LaTeX.
 
@@ -1369,14 +1292,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.48 De la misma forma en los t�
+l.30 De la misma forma en los t�
                                   rminos $M_{5}$ y $M_{7}$ se puede eliminar
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./ejercicio2/ejercicio2.tex:49: Package inputenc Error: Unicode char � (U+FFF
+./ejercicio2/ejercicio2.tex:31: Package inputenc Error: Unicode char � (U+FFF
 D)
 (inputenc)                not set up for use with LaTeX.
 
@@ -1384,14 +1307,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.49 la variable $b$, entre los t�
+l.31 la variable $b$, entre los t�
                                     rminos $M_{8}$ y $M_{10}$ se elimina
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./ejercicio2/ejercicio2.tex:50: Package inputenc Error: Unicode char � (U+FFF
+./ejercicio2/ejercicio2.tex:32: Package inputenc Error: Unicode char � (U+FFF
 D)
 (inputenc)                not set up for use with LaTeX.
 
@@ -1399,8 +1322,84 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.50 la variable $b$, y entre los t�
+l.32 la variable $b$, y entre los t�
                                       rminos $M_{14}$ y $M_{15}$ se elimina
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./ejercicio2/ejercicio2.tex:34: Package inputenc Error: Unicode char � (U+FFF
+D)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 la ecuaci�
+                 n a:
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./ejercicio2/ejercicio2.tex:38: Package inputenc Error: Unicode char � (U+FFF
+D)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 Para no complicar tanto la ecuaci�
+                                         n y no enredarnos vamos a separar
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./ejercicio2/ejercicio2.tex:39: Package inputenc Error: Unicode char � (U+FFF
+D)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 la funci�
+                n principal en 2, para que $f(d,c,b,a)=f_{1}(d,c,b,a)*f_{2}(...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./ejercicio2/ejercicio2.tex:46: Package inputenc Error: Unicode char � (U+FFF
+D)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 que se obtiene. No haremos el an�
+                                        lisis para $f_{2}$ ya que ser� el
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./ejercicio2/ejercicio2.tex:46: Package inputenc Error: Unicode char � (U+FFF
+D)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 ...s el an�lisis para $f_{2}$ ya que ser�
+                                                   el
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1414,8 +1413,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.52 la ecuaci�
-                 n a:
+l.52 reordenar los t�
+                       rminos:
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1429,90 +1428,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.56 Para no complicar tanto la ecuaci�
-                                         n y no enredarnos vamos a separar
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./ejercicio2/ejercicio2.tex:57: Package inputenc Error: Unicode char � (U+FFF
-D)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.57 la funci�
-                n principal en 2, para que $f(d,c,b,a)=f_{1}(d,c,b,a)*f_{2}(...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./ejercicio2/ejercicio2.tex:64: Package inputenc Error: Unicode char � (U+FFF
-D)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.64 que se obtiene. No haremos el an�
-                                        lisis para $f_{2}$ ya que ser� el
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./ejercicio2/ejercicio2.tex:64: Package inputenc Error: Unicode char � (U+FFF
-D)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.64 ...s el an�lisis para $f_{2}$ ya que ser�
-                                                   el
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./ejercicio2/ejercicio2.tex:70: Package inputenc Error: Unicode char � (U+FFF
-D)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.70 reordenar los t�
-                       rminos:
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./ejercicio2/ejercicio2.tex:74: Package inputenc Error: Unicode char � (U+FFF
-D)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.74 Para poder seguir reduciendo la ecuaci�
+l.56 Para poder seguir reduciendo la ecuaci�
                                               n vamos a utilizar la propiedad
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./ejercicio2/ejercicio2.tex:76: Package inputenc Error: Unicode char � (U+FFF
+./ejercicio2/ejercicio2.tex:58: Package inputenc Error: Unicode char � (U+FFF
 D)
 (inputenc)                not set up for use with LaTeX.
 
@@ -1520,14 +1443,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.76 con los primeros 3 t�
+l.58 con los primeros 3 t�
                             rminos, y luego con los segundos 3 t�rminos,
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./ejercicio2/ejercicio2.tex:76: Package inputenc Error: Unicode char � (U+FFF
+./ejercicio2/ejercicio2.tex:58: Package inputenc Error: Unicode char � (U+FFF
 D)
 (inputenc)                not set up for use with LaTeX.
 
@@ -1535,14 +1458,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.76 ...�rminos, y luego con los segundos 3 t�
+l.58 ...�rminos, y luego con los segundos 3 t�
                                                   rminos,
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./ejercicio2/ejercicio2.tex:83: Package inputenc Error: Unicode char � (U+FFF
+./ejercicio2/ejercicio2.tex:65: Package inputenc Error: Unicode char � (U+FFF
 D)
 (inputenc)                not set up for use with LaTeX.
 
@@ -1550,7 +1473,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.83 De la misma forma, para $f_{2}$ quedar�
+l.65 De la misma forma, para $f_{2}$ quedar�
                                               :
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1558,7 +1481,7 @@ or  <return>  to continue without it.
 
 [2]
 
-./ejercicio2/ejercicio2.tex:95: Package inputenc Error: Unicode char � (U+FFF
+./ejercicio2/ejercicio2.tex:77: Package inputenc Error: Unicode char � (U+FFF
 D)
 (inputenc)                not set up for use with LaTeX.
 
@@ -1566,14 +1489,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.95 Para reducir estos t�
+l.77 Para reducir estos t�
                             rminos utilizamos la propiedad de combinaci�n
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./ejercicio2/ejercicio2.tex:95: Package inputenc Error: Unicode char � (U+FFF
+./ejercicio2/ejercicio2.tex:77: Package inputenc Error: Unicode char � (U+FFF
 D)
 (inputenc)                not set up for use with LaTeX.
 
@@ -1581,44 +1504,52 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.95 ...os utilizamos la propiedad de combinaci�
+l.77 ...os utilizamos la propiedad de combinaci�
                                                   n
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./ejercicio2/ejercicio2.tex:104: Package inputenc Error: Unicode char � (U+FF
-FD)
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 86.
+
+
+./ejercicio2/ejercicio2.tex:88: Package inputenc Error: Unicode char � (U+FFF
+D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.104 \part*{2� PARTE}
-                        
+l.88 Ahora veremos que suceder�
+                                 a si vieramos el problema desde los mapas
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./ejercicio2/ejercicio2.tex:106: Package inputenc Error: Unicode char � (U+FF
-FD)
+./ejercicio2/ejercicio2.tex:89: Package inputenc Error: Unicode char � (U+FFF
+D)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.106 Ahora veremos que suceder�
-                                  a si vieramos el problema desde los mapas
+l.89 de Karnaugh, teniendo los mismos maxit�
+                                              rminos.
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./ejercicio2/ejercicio2.tex:107: Package inputenc Error: Unicode char � (U+FF
+./ejercicio2/ejercicio2.tex:105: Package inputenc Error: Unicode char � (U+FF
 FD)
 (inputenc)                not set up for use with LaTeX.
 
@@ -1626,29 +1557,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.107 de Karnaugh, teniendo los mismos maxit�
-                                               rminos.
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./ejercicio2/ejercicio2.tex:123: Package inputenc Error: Unicode char � (U+FF
-FD)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.123 Agrupamos todos los maxit�
+l.105 Agrupamos todos los maxit�
                                   rminos de a pares verticales, $M_{0}$ con
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./ejercicio2/ejercicio2.tex:126: Package inputenc Error: Unicode char � (U+FF
+./ejercicio2/ejercicio2.tex:108: Package inputenc Error: Unicode char � (U+FF
 FD)
 (inputenc)                not set up for use with LaTeX.
 
@@ -1656,62 +1572,78 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.126 al tercero $I_{3}$ y el �
+l.108 al tercero $I_{3}$ y el �
                                  ltimo lo llamaremos $I_{4}$
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./ejercicio2/ejercicio2.tex:130: Package babel Error: You haven't defined the l
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 110.
+
+
+./ejercicio2/ejercicio2.tex:112: Package babel Error: You haven't defined the l
 anguage friulan yet.
 
 See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.130 \selectlanguage{friulan}
+l.112 \selectlanguage{friulan}
                               %
 Your command will be ignored, type <return> to proceed
 
 
-./ejercicio2/ejercicio2.tex:138: Package babel Error: You haven't defined the l
+./ejercicio2/ejercicio2.tex:120: Package babel Error: You haven't defined the l
 anguage friulan yet.
 
 See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.138 \selectlanguage{friulan}
+l.120 \selectlanguage{friulan}
                               %
 Your command will be ignored, type <return> to proceed
 
 
-./ejercicio2/ejercicio2.tex:139: Package babel Error: You haven't defined the l
+./ejercicio2/ejercicio2.tex:121: Package babel Error: You haven't defined the l
 anguage friulan yet.
 
 See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.139 \end{figure}
+l.121 \end{figure}
                   
 Your command will be ignored, type <return> to proceed
 
 
-./ejercicio2/ejercicio2.tex:145: Package babel Error: You haven't defined the l
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 125.
+
+
+./ejercicio2/ejercicio2.tex:127: Package babel Error: You haven't defined the l
 anguage spanish yet.
 
 See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.145 \selectlanguage{spanish}
+l.127 \selectlanguage{spanish}
                               %
 Your command will be ignored, type <return> to proceed
 
 
-./ejercicio2/ejercicio2.tex:147: Package inputenc Error: Unicode char � (U+FF
+./ejercicio2/ejercicio2.tex:129: Package inputenc Error: Unicode char � (U+FF
 FD)
 (inputenc)                not set up for use with LaTeX.
 
@@ -1719,14 +1651,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.147 ...endo que si se niega 2 veces la ecuaci�
+l.129 ...endo que si se niega 2 veces la ecuaci�
                                                   n
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./ejercicio2/ejercicio2.tex:155: Package inputenc Error: Unicode char � (U+FF
+./ejercicio2/ejercicio2.tex:137: Package inputenc Error: Unicode char � (U+FF
 FD)
 (inputenc)                not set up for use with LaTeX.
 
@@ -1734,14 +1666,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.155 ... y algunas entradas negadas, siendo as�
+l.137 ... y algunas entradas negadas, siendo as�
                                                    necesarias
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./ejercicio2/ejercicio2.tex:157: Package inputenc Error: Unicode char � (U+FF
+./ejercicio2/ejercicio2.tex:139: Package inputenc Error: Unicode char � (U+FF
 FD)
 (inputenc)                not set up for use with LaTeX.
 
@@ -1749,82 +1681,292 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.157 solo pide NAND). El circuito ser�
+l.139 solo pide NAND). El circuito ser�
                                          a el siguiente:
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./ejercicio2/ejercicio2.tex:162: Package babel Error: You haven't defined the l
+./ejercicio2/ejercicio2.tex:144: Package babel Error: You haven't defined the l
 anguage spanish yet.
 
 See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.162 \selectlanguage{spanish}
+l.144 \selectlanguage{spanish}
                               %
 Your command will be ignored, type <return> to proceed
 
 
-./ejercicio2/ejercicio2.tex:166: Package babel Error: You haven't defined the l
+./ejercicio2/ejercicio2.tex:148: Package babel Error: You haven't defined the l
 anguage spanish yet.
 
 See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.166 \selectlanguage{spanish}
+l.148 \selectlanguage{spanish}
                               %
 Your command will be ignored, type <return> to proceed
 
 
-./ejercicio2/ejercicio2.tex:167: Package babel Error: You haven't defined the l
+./ejercicio2/ejercicio2.tex:149: Package babel Error: You haven't defined the l
 anguage spanish yet.
 
 See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.167 \end{figure}
+l.149 \end{figure}
                   
 Your command will be ignored, type <return> to proceed
 
 
-./ejercicio2/ejercicio2.tex:167: Package babel Error: You haven't defined the l
+./ejercicio2/ejercicio2.tex:149: Package babel Error: You haven't defined the l
 anguage spanish yet.
 
 See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.167 \end{figure}
+l.149 \end{figure}
                   
 Your command will be ignored, type <return> to proceed
 
-[3] (./InformeTP1.aux) ) )
-(\end occurred inside a group at level 1)
+) (./ejercicio4/ejercicio4.tex
 
-### semi simple group (level 1) entered at line 19 (\begingroup)
-### bottom level 
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 2.
+
+
+./ejercicio4/ejercicio4.tex:3: Package inputenc Error: Unicode char � (U+FFFD
+)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 En primer lugar a continuaci�
+                                   n se presenta la tabla de verdad para la ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./ejercicio4/ejercicio4.tex:3: Package inputenc Error: Unicode char � (U+FFFD
+)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...esenta de la forma Y3, Y2, Y1, Y0 (bit m�
+                                                  s significativo al menos s...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 8.
+
+./ejercicio4/ejercicio4.tex:94: Package inputenc Error: Unicode char � (U+FFF
+D)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 ...ida las siguientes expresiones en funci�
+                                                  n de los mint�rminos:
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./ejercicio4/ejercicio4.tex:94: Package inputenc Error: Unicode char � (U+FFF
+D)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 ...es expresiones en funci�n de los mint�
+                                                  rminos:
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./ejercicio4/ejercicio4.tex:104: Package inputenc Error: Unicode char � (U+FF
+FD)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.104 Y por �
+               ltimo podemos representar las salidas en funci�n de las ent...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./ejercicio4/ejercicio4.tex:104: Package inputenc Error: Unicode char � (U+FF
+FD)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.104 ...demos representar las salidas en funci�
+                                                  n de las entradas con las ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./ejercicio4/ejercicio4.tex:104: Package inputenc Error: Unicode char � (U+FF
+FD)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.104 ...n de las entradas con las compuertas l�
+                                                  gicas como se puede observ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./ejercicio4/ejercicio4.tex:104: Package inputenc Error: Unicode char � (U+FF
+FD)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.104 ...gicas como se puede observar en los gr�
+                                                  ficos que mostramos a cont...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./ejercicio4/ejercicio4.tex:104: Package inputenc Error: Unicode char � (U+FF
+FD)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.104 ... gr�ficos que mostramos a continuaci�
+                                                  n, donde no representamos ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[3]
+
+LaTeX Warning: File `Y1CompuertasLogicas.png' not found on input line 107.
+
+
+./ejercicio4/ejercicio4.tex:107: Package pdftex.def Error: File `Y1CompuertasLo
+gicas.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.107 ...idth=\linewidth]{Y1CompuertasLogicas.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+LaTeX Warning: File `Y2CompuertasLogicas.png' not found on input line 111.
+
+
+./ejercicio4/ejercicio4.tex:111: Package pdftex.def Error: File `Y2CompuertasLo
+gicas.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 ...idth=\linewidth]{Y2CompuertasLogicas.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Y3CompuertasLogicas.png' not found on input line 115.
+
+
+./ejercicio4/ejercicio4.tex:115: Package pdftex.def Error: File `Y3CompuertasLo
+gicas.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.115 ...idth=\linewidth]{Y3CompuertasLogicas.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) [4] [5] [6] [7] (./InformeTP1.aux) ) 
 Here is how much of TeX's memory you used:
- 8598 strings out of 494847
- 136017 string characters out of 6179081
- 320679 words of memory out of 5000000
- 11625 multiletter control sequences out of 15000+600000
- 94701 words of font info for 156 fonts, out of 8000000 for 9000
+ 8668 strings out of 494847
+ 137336 string characters out of 6179081
+ 337677 words of memory out of 5000000
+ 11651 multiletter control sequences out of 15000+600000
+ 100848 words of font info for 174 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 51i,11n,51p,8866b,373s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
-r/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on InformeTP1.pdf (3 pages, 47347 bytes).
+ 51i,11n,51p,8866b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/matias/.texlive2017/texmf-var/fon
+ts/pk/ljfour/jknappen/ec/ectt1095.600pk>{/usr/share/texlive/texmf-dist/fonts/en
+c/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/f
+ourier-mex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourie
+r-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on InformeTP1.pdf (7 pages, 71512 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 24577 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 38401 words of extra memory for PDF output out of 42996 (max. 10000000)
 
