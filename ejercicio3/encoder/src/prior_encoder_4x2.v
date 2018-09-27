@@ -17,7 +17,7 @@ module encoder_x4(out, flag, in, enable);
     else if(in != 0)
         flag <= 1;
     if(enable == 1)begin
-            if(in == 0)
+            if((in == 0) || (in == 1))
                 out = 0;
             else if((in == 2)||(in == 3))
                 out = 1;
